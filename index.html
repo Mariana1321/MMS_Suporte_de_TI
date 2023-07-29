@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>MMS Suporte de TI</title>
+
+    <!-- Função usada para rolar a página para uma seção específica com base no ID fornecido. -->
+    <script>
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        window.scrollTo({
+          top: section.offsetTop,
+          behavior: "smooth"
+        });
+      }
+    </script>  
+    
+</head>
+<body>
+  
+  <!-- Barra de navegação -->
+  <header class="container-fluid bg-light navbar-custom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img class="logo" src="img/logo1.png" alt="MMS Suporte de TI">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav flex-grow-1 justify-content-end">
+          <li class="nav-item active">
+            <a class="nav-link" href="#pagina-inicial" onclick="scrollToSection('pagina-inicial')">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#quem-somos" onclick="scrollToSection('Quem-somos')">Quem somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#nosso-time" onclick="scrollToSection('Nosso-time')">Nosso time </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#nossos-serviços" onclick="scrollToSection('Nossos-serviços')">Nossos serviços</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <!-- Carrossel de imagens -->
+  <section id="cabecalho">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="img/img6.png" class="d-block w-100" alt="Tecla de suporte" >
+              <div class="carousel-caption d-none d-md-block">
+                  <p>Acione nosso suporte a qualquer momento</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/img8.jpg" class="d-block w-100" alt="Datacenter">
+              <div class="carousel-caption d-none d-md-block">
+                <p>Cloud</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/img10.png" class="d-block w-100" alt="Calculadora e balancete">
+              <div class="carousel-caption d-none d-md-block">
+                <p>Realizamos manutenção em máquinas</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/img11.jpg" class="d-block w-100" alt="dashboard na parede">
+              <div class="carousel-caption d-none d-md-block">
+                <p></p>
+              </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+  </section>
+
+  <!-- Página inicial -->
+  <section id="pagina-inicial">
+    <section class="home">
+        <div class="home-text">
+            <h4 class="text-h3">Nossa missão é solucionar.</h4>
+            <h1 class="text-h2"> Venham conhecer nossos serviços.</h1>
+            <p>Buscando sempre entregar qualidade para os clientes, estabelecendo conexões entre as empresas, com
+              o próposito de ajudar as empresas  a evoluírem cada vez mais em seus négocios.   
+            </p>
+            <a href="#nossos-serviços" class="home-btn" onclick="scrollToSection('nossos-serviços')">CONHECER OS SERVIÇOS</a>
+        </div>
+                
+        <div class="home-img">
+            <img src="img/homem.jpg" alt="Homem trabalhando">
+        </div>
+        </div>
+    </section>
+  </section>
+
+  <!-- Quem somos -->
+  <section id="Quem-somos">
+      <div class="header">
+          <h2>Soluções ideais para o seu negócio</h2>
+      </div>
+      <div class="conteudo">
+        <img src="img/somos.jpg" alt="Imagem do assistente">
+        <p>Com a ideia de sair do modelo tradicional de trabalho, somos o seu parceiro confiável para solucionar seus problemas técnicos da sua empresa. 
+          Com uma plataforma abrangente e soluções inovadoras, o MMS suporte de TI oferece uma equipe especializada em suporte técnico e ferramentas
+          necessárias para atender problemas enfrentados pelos usuários e por donos de pequenas e médias empresas.</p>
+      </div>
+  </section>
+   
+  <!-- Nosso time -->
+  <section id="Nosso-time" class="container-fluid text-center">
+    <div class="row p-5">
+      <h2 class="col text-center">Nosso Time</h2> 
+    </div> 
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <img 
+            class="bd-placeholder-img rounded-circle" width="200" height="200"
+            src="img/nossotime/mariana.jpg" alt="Foto do membro do time"
+          />
+          <div class="p-4">
+            <h5>Mariana Macedo</h5>
+            <p>SEO</p>
+          </div>  
+        </div>  
+        <div class="col-lg-3">
+          <img
+            class="bd-placeholder-img rounded-circle" width="200" height="200"
+            src="img/nossotime/rakel.jpg" alt="Foto do membro do time"
+          />
+          <div class="p-4">
+            <h5>Raquel Oliveira</h5>
+            <p>Especialista em suporte de Ti</p>
+          </div>
+        </div> 
+      </div>
+    </div> 
+  </section>
+
+  <!-- Nossos serviços -->
+  <section id="nossos-serviços" class="container text-center p-5">
+    <div class="row p-5">
+        <h2 class="text-center">Conheça nossos planos</h2>
+    </div>
+    <!--Nossos Produtos Cards-->
+    <div class="row row-cols-3">
+      <div class="col">
+        <div class="card">
+          <div class="icon">
+            <img src="img/planos/plano1.png" alt="Apresentação de plano1">
+          </div>
+          <div class="content">
+          </div>
+          
+          <button id="read_button1">Contratar</button>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="icon">
+            <img src="img/planos/plano2.png" alt="planos 2">
+          </div>
+          <div class="content">
+          </div>
+          
+          <button id="read_button1">Contratar</button>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="icon">
+            <img src="img/planos/plano3.png" alt="planos 3">
+          </div>
+          <div class="content">
+          </div>
+          
+          <button id="read_button1">Contratar</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Rodapé--> 
+  <div class="container">
+    <footer class="py-2 my-3">
+        <div class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><p class="text-center text-muted">&copy;2023 - Mariana Macedo</p></a></li>
+        </div>
+        <div class="row py-5">
+            <div class="col-12 col-md-4 text-center text-md-left">
+                <p class="text-center text-muted">Endereço: Rua Avelino Barreto, São Paulo/SP</p>
+            </div>
+            <div class="col-12 col-md-4 text-center">
+                <ul class="nav justify-content-center">
+                        <p class="text-center text-muted">Nossas redes sociais:</p> 
+                        <li class="ms-3"><a class="text-muted" href="https://github.com/Mariana1321"><svg class="bi" width="24"  height="24"><use xlink:href="#twitter"/><img src="img/footer/github.png" width="20"height="20"alt="Github"></svg></a></li>
+                        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24"  height="24"><use xlink:href="#twitter"/><img src="img/footer/instagram.png" width="20"height="20"alt="Instagram"></svg></a></li>
+                        <li class="ms-3"><a class="text-muted" href="https://www.linkedin.com/in/mariana-mac%C3%AAdo-38b0a41b1/"><svg class="bi" width="24"  height="24"><use xlink:href="#twitter"/><img src="img/footer/linkedin.png" width="20"height="20"alt="Linkedin"></svg></a></li>
+                    </p>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4 text-center text-md-right">
+                <p class="text-center text-muted">Contato: 9999-9999</p>
+            </div>
+        </div>
+    </footer> 
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
